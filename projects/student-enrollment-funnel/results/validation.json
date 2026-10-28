@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "unique prospect IDs",
+    "required fields",
+    "binary and nested stages",
+    "ordered stage dates",
+    "7-day inquiry window",
+    "90-day cohort maturity",
+    "unique daily channel costs",
+    "SQL/Pandas stage reconciliation",
+    "SQL/Pandas group reconciliation",
+    "no duplicated spend",
+    "disjoint model split"
+  ],
+  "prospect_rows": 10000,
+  "cost_rows": 905
+}

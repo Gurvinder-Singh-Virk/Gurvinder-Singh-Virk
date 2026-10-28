@@ -1,0 +1,46 @@
+{
+  "seed": 20261028,
+  "overview": {
+    "prospects": 10000,
+    "inquiries": 2100,
+    "enrollments": 454,
+    "spend": 94760.04,
+    "best_channel": "Email",
+    "best_channel_cpe": 78.13714285714285
+  },
+  "experiment": {
+    "control_n": 4979,
+    "treatment_n": 5021,
+    "control_inquiries": 959,
+    "treatment_inquiries": 1141,
+    "control_rate": 0.19260895762201244,
+    "treatment_rate": 0.22724556861183032,
+    "absolute_lift_pp": 3.4636610989817878,
+    "relative_lift_pct": 17.982866122867907,
+    "ci_low_pp": 1.8677438888613063,
+    "ci_high_pp": 5.057333870009903,
+    "z_statistic": 4.251854288678517,
+    "p_value": 2.1200778886751595e-05,
+    "srm_p_value": 0.6744854536964989,
+    "planned_n_per_arm": 2943,
+    "decision": "positive simulated effect"
+  },
+  "model": {
+    "train_n": 7500,
+    "test_n": 2500,
+    "test_enrollments": 114,
+    "test_prevalence": 0.0456,
+    "roc_auc": 0.6313804208761635,
+    "average_precision": 0.07876984534865071,
+    "brier_score": 0.0430936710726095,
+    "baseline_brier": 0.04352071111111112,
+    "log_loss": 0.18070296844216654,
+    "baseline_log_loss": 0.18535081526061895,
+    "reference_categories": {
+      "channel": "Email",
+      "device": "Desktop",
+      "program": "Business",
+      "variant": "A"
+    }
+  }
+}

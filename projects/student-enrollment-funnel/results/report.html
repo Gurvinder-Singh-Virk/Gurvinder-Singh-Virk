@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student enrollment analytics</title>
+<style>body{margin:0;background:#edf3f7;color:#17334a;font:16px/1.6 system-ui}main{max-width:1120px;margin:40px auto;padding:32px;background:white;border-radius:16px}h1{font-size:34px;line-height:1.2}.tag{color:#15766b;font-weight:700;letter-spacing:.08em}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}.card{padding:20px;background:#edf5f7;border-radius:10px}strong{font-size:28px;display:block}img{width:100%;height:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:right;border-bottom:1px solid #ddd}td:first-child,th:first-child{text-align:left}a{color:#176b85}@media(max-width:700px){main{margin:0;padding:18px}h1{font-size:27px}table{font-size:11px}td,th{padding:5px}}</style><main>
+<p class="tag">INDEPENDENT CASE STUDY · SYNTHETIC DATA</p><h1>From first visit to enrollment</h1>
+<p>Marketing funnel performance and a simulated randomized form experiment. Acquisition: January–June 2025; 90-day follow-up.</p>
+<div class="grid"><div class="card">Visitors<strong>10,000</strong></div><div class="card">Enrollments<strong>454</strong></div><div class="card">Enrollment rate<strong>4.54%</strong></div><div class="card">Cost / enrollment<strong>$208.72</strong></div></div>
+<img src="overview.png" alt="Enrollment funnel, cost per enrollment by channel, and simulated experiment conversion rates">
+<h2>Does a simpler form improve inquiries?</h2><p>Form B: 22.72%; form A: 19.26%. Difference: <b>3.46 percentage points</b> (18.0% relative). 95% interval: 1.87 to 5.06 points. Two-sided p=0.00002.</p>
+<img src="experiment_interval.png" alt="Confidence interval for treatment-minus-control conversion difference">
+<h2>Channel economics</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>spend</th>
+      <th>visitors</th>
+      <th>inquiries</th>
+      <th>enrollments</th>
+      <th>cost_per_enrollment</th>
+    </tr>
+    <tr>
+      <th>channel</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Email</th>
+      <td>8204.40</td>
+      <td>1300</td>
+      <td>349</td>
+      <td>105</td>
+      <td>78.14</td>
+    </tr>
+    <tr>
+      <th>Organic Search</th>
+      <td>14344.64</td>
+      <td>2240</td>
+      <td>509</td>
+      <td>113</td>
+      <td>126.94</td>
+    </tr>
+    <tr>
+      <th>Paid Search</th>
+      <td>39835.72</td>
+      <td>2907</td>
+      <td>616</td>
+      <td>123</td>
+      <td>323.87</td>
+    </tr>
+    <tr>
+      <th>Paid Social</th>
+      <td>26917.66</td>
+      <td>2537</td>
+      <td>404</td>
+      <td>62</td>
+      <td>434.16</td>
+    </tr>
+    <tr>
+      <th>Referral</th>
+      <td>5457.62</td>
+      <td>1016</td>
+      <td>222</td>
+      <td>51</td>
+      <td>107.01</td>
+    </tr>
+  </tbody>
+</table>
+<h2>What to do next</h2><p>Investigate visitor-to-inquiry friction. In a real setting, validate the form with a randomized test and enrollment-quality guardrails. Compare channels using incremental impact before changing budgets.</p>
+<h2>Model quality</h2><p>Held-out ROC AUC 0.631; average precision 0.079; enrollment prevalence 0.046. Brier score 0.0431, versus baseline 0.0435. The model has limited discrimination and is a baseline, not a deployed decision system.</p>
+<h2>Read this honestly</h2><p>All prospects and costs are fabricated. A treatment effect is intentionally encoded in the generator. These results demonstrate analytical methods and are not measured business impact. This is a static Python report; a Tableau workbook/publication remains to be authored.</p>
+<p><a href="business_brief.md">Business brief</a> · <a href="../TABLEAU_GUIDE.md">Tableau build guide</a> · <a href="../README.md">Methods and reproduction</a></p></main></html>

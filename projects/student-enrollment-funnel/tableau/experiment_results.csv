@@ -1,0 +1,3 @@
+variant,visitors,inquiries,inquiry_rate,rate_ci_low,rate_ci_high,control_n,treatment_n,control_inquiries,treatment_inquiries,control_rate,treatment_rate,absolute_lift_pp,relative_lift_pct,ci_low_pp,ci_high_pp,z_statistic,p_value,srm_p_value,planned_n_per_arm,decision
+A,4979,959,0.19260896,0.18189399,0.20379789,4979,5021,959,1141,0.19260896,0.22724557,3.46366110,17.98286612,1.86774389,5.05733387,4.25185429,0.00002120,0.67448545,2943,positive simulated effect
+B,5021,1141,0.22724557,0.21586563,0.23904255,4979,5021,959,1141,0.19260896,0.22724557,3.46366110,17.98286612,1.86774389,5.05733387,4.25185429,0.00002120,0.67448545,2943,positive simulated effect

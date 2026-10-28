@@ -1,0 +1,151 @@
+cohort_month,channel,stage,prospects,stage_order
+2025-01,Email,visitors,237,1
+2025-01,Organic Search,visitors,342,1
+2025-01,Paid Search,visitors,475,1
+2025-01,Paid Social,visitors,444,1
+2025-01,Referral,visitors,172,1
+2025-02,Email,visitors,196,1
+2025-02,Organic Search,visitors,347,1
+2025-02,Paid Search,visitors,442,1
+2025-02,Paid Social,visitors,404,1
+2025-02,Referral,visitors,141,1
+2025-03,Email,visitors,220,1
+2025-03,Organic Search,visitors,392,1
+2025-03,Paid Search,visitors,507,1
+2025-03,Paid Social,visitors,454,1
+2025-03,Referral,visitors,183,1
+2025-04,Email,visitors,215,1
+2025-04,Organic Search,visitors,354,1
+2025-04,Paid Search,visitors,483,1
+2025-04,Paid Social,visitors,434,1
+2025-04,Referral,visitors,186,1
+2025-05,Email,visitors,232,1
+2025-05,Organic Search,visitors,408,1
+2025-05,Paid Search,visitors,526,1
+2025-05,Paid Social,visitors,393,1
+2025-05,Referral,visitors,167,1
+2025-06,Email,visitors,200,1
+2025-06,Organic Search,visitors,397,1
+2025-06,Paid Search,visitors,474,1
+2025-06,Paid Social,visitors,408,1
+2025-06,Referral,visitors,167,1
+2025-01,Email,inquiries,72,2
+2025-01,Organic Search,inquiries,86,2
+2025-01,Paid Search,inquiries,98,2
+2025-01,Paid Social,inquiries,78,2
+2025-01,Referral,inquiries,36,2
+2025-02,Email,inquiries,52,2
+2025-02,Organic Search,inquiries,74,2
+2025-02,Paid Search,inquiries,96,2
+2025-02,Paid Social,inquiries,73,2
+2025-02,Referral,inquiries,36,2
+2025-03,Email,inquiries,49,2
+2025-03,Organic Search,inquiries,90,2
+2025-03,Paid Search,inquiries,109,2
+2025-03,Paid Social,inquiries,56,2
+2025-03,Referral,inquiries,36,2
+2025-04,Email,inquiries,48,2
+2025-04,Organic Search,inquiries,76,2
+2025-04,Paid Search,inquiries,98,2
+2025-04,Paid Social,inquiries,65,2
+2025-04,Referral,inquiries,34,2
+2025-05,Email,inquiries,67,2
+2025-05,Organic Search,inquiries,90,2
+2025-05,Paid Search,inquiries,113,2
+2025-05,Paid Social,inquiries,56,2
+2025-05,Referral,inquiries,35,2
+2025-06,Email,inquiries,61,2
+2025-06,Organic Search,inquiries,93,2
+2025-06,Paid Search,inquiries,102,2
+2025-06,Paid Social,inquiries,76,2
+2025-06,Referral,inquiries,45,2
+2025-01,Email,applications,40,3
+2025-01,Organic Search,applications,54,3
+2025-01,Paid Search,applications,52,3
+2025-01,Paid Social,applications,36,3
+2025-01,Referral,applications,20,3
+2025-02,Email,applications,38,3
+2025-02,Organic Search,applications,44,3
+2025-02,Paid Search,applications,57,3
+2025-02,Paid Social,applications,40,3
+2025-02,Referral,applications,23,3
+2025-03,Email,applications,30,3
+2025-03,Organic Search,applications,42,3
+2025-03,Paid Search,applications,63,3
+2025-03,Paid Social,applications,30,3
+2025-03,Referral,applications,19,3
+2025-04,Email,applications,34,3
+2025-04,Organic Search,applications,48,3
+2025-04,Paid Search,applications,58,3
+2025-04,Paid Social,applications,32,3
+2025-04,Referral,applications,19,3
+2025-05,Email,applications,46,3
+2025-05,Organic Search,applications,47,3
+2025-05,Paid Search,applications,60,3
+2025-05,Paid Social,applications,27,3
+2025-05,Referral,applications,18,3
+2025-06,Email,applications,39,3
+2025-06,Organic Search,applications,58,3
+2025-06,Paid Search,applications,55,3
+2025-06,Paid Social,applications,33,3
+2025-06,Referral,applications,27,3
+2025-01,Email,admissions,27,4
+2025-01,Organic Search,admissions,41,4
+2025-01,Paid Search,admissions,34,4
+2025-01,Paid Social,admissions,28,4
+2025-01,Referral,admissions,15,4
+2025-02,Email,admissions,24,4
+2025-02,Organic Search,admissions,31,4
+2025-02,Paid Search,admissions,39,4
+2025-02,Paid Social,admissions,26,4
+2025-02,Referral,admissions,18,4
+2025-03,Email,admissions,25,4
+2025-03,Organic Search,admissions,31,4
+2025-03,Paid Search,admissions,44,4
+2025-03,Paid Social,admissions,21,4
+2025-03,Referral,admissions,13,4
+2025-04,Email,admissions,22,4
+2025-04,Organic Search,admissions,31,4
+2025-04,Paid Search,admissions,44,4
+2025-04,Paid Social,admissions,19,4
+2025-04,Referral,admissions,17,4
+2025-05,Email,admissions,37,4
+2025-05,Organic Search,admissions,34,4
+2025-05,Paid Search,admissions,36,4
+2025-05,Paid Social,admissions,17,4
+2025-05,Referral,admissions,11,4
+2025-06,Email,admissions,31,4
+2025-06,Organic Search,admissions,42,4
+2025-06,Paid Search,admissions,38,4
+2025-06,Paid Social,admissions,24,4
+2025-06,Referral,admissions,21,4
+2025-01,Email,enrollments,19,5
+2025-01,Organic Search,enrollments,27,5
+2025-01,Paid Search,enrollments,14,5
+2025-01,Paid Social,enrollments,11,5
+2025-01,Referral,enrollments,8,5
+2025-02,Email,enrollments,16,5
+2025-02,Organic Search,enrollments,18,5
+2025-02,Paid Search,enrollments,19,5
+2025-02,Paid Social,enrollments,11,5
+2025-02,Referral,enrollments,9,5
+2025-03,Email,enrollments,14,5
+2025-03,Organic Search,enrollments,18,5
+2025-03,Paid Search,enrollments,23,5
+2025-03,Paid Social,enrollments,10,5
+2025-03,Referral,enrollments,9,5
+2025-04,Email,enrollments,13,5
+2025-04,Organic Search,enrollments,12,5
+2025-04,Paid Search,enrollments,23,5
+2025-04,Paid Social,enrollments,7,5
+2025-04,Referral,enrollments,7,5
+2025-05,Email,enrollments,21,5
+2025-05,Organic Search,enrollments,18,5
+2025-05,Paid Search,enrollments,22,5
+2025-05,Paid Social,enrollments,7,5
+2025-05,Referral,enrollments,6,5
+2025-06,Email,enrollments,22,5
+2025-06,Organic Search,enrollments,20,5
+2025-06,Paid Search,enrollments,22,5
+2025-06,Paid Social,enrollments,16,5
+2025-06,Referral,enrollments,12,5

@@ -15,16 +15,19 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: I like to eat but not to cook!
 -->
 
-## Portfolio project — planned
+## Portfolio project
 
-### [Student Enrollment Funnel & A/B Testing Dashboard](projects/student-enrollment-funnel/README.md)
+### [Student Enrollment Funnel & A/B Testing](projects/student-enrollment-funnel/README.md)
 
-**Status: Planned**
+**Analysis complete · Tableau workbook pending**
 
-A proposed independent analytics project using synthetic data for a fictional online university. The planned scope includes enrollment funnel analysis, marketing channel costs, a simulated A/B test, logistic regression, and a Tableau dashboard.
+A reproducible SQL/Python case study analyzing **10,000 synthetic prospects**, marketing channel costs, enrollment conversion, a simulated randomized form experiment, and logistic regression.
 
-**Planned stack:** SQL · Python · Tableau
+- Computed simulated inquiry conversion: **19.26% (A) vs 22.72% (B)**, a **3.46 percentage-point difference**, with confidence intervals and allocation checks.
+- Includes an executed notebook, SQL queries, compressed raw data, static report, six analytical tests, and Tableau-ready CSV exports.
+- All data are synthetic; the experiment is simulated and its treatment effect is encoded in the generator.
 
-[View the project plan](projects/student-enrollment-funnel/README.md)
+[Explore the project and results](projects/student-enrollment-funnel/README.md) · [Tableau build guide](projects/student-enrollment-funnel/TABLEAU_GUIDE.md)
 
-*Implementation has not started; results and dashboard links will be added after the work is completed.*
+*The native Tableau workbook and Tableau Public publication remain to be created.*
+

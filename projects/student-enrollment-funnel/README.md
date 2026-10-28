@@ -1,68 +1,84 @@
-# Student Enrollment Funnel & A/B Testing Dashboard
+# Student Enrollment Funnel & A/B Testing
 
-**Status: Planned — implementation has not started.**
+**Independent portfolio case study · synthetic data · simulated experiment**
 
-An independent portfolio project for a fictional online university, designed to explore enrollment funnels, marketing channel efficiency, and a simulated landing-page experiment.
+**Status:** SQL/Python analysis, reproducible data, notebook, report, and Tableau-ready exports complete. **Native Tableau workbook and public dashboard: not yet created.**
 
-## Business questions
+A fictional online university wants to understand marketing channel costs, enrollment drop-off, and whether a simplified inquiry form changes conversion. This project answers those questions using 10,000 synthetic prospects, SQL, a randomized experiment simulation, and logistic regression.
 
-- Which marketing channels generate inquiries and enrollments at the lowest cost?
-- Where do prospective students drop out between their first visit and enrollment?
-- Does a simplified inquiry form change visitor-to-inquiry conversion in a simulated randomized experiment?
-- How do channel, device, and program relate to enrollment probability?
+![Enrollment funnel, channel economics, and simulated experiment](results/overview.png)
 
-## Planned data
+## Computed results
 
-Generate a reproducible synthetic dataset of approximately 10,000 fictional prospective students over six months. This is a target dataset size, not a completed analysis count.
-
-- Prospect table: anonymous prospect ID, first-visit date, first-touch channel, campaign, device, program, experiment assignment, and funnel-stage timestamps.
-- Campaign cost table: date, campaign, channel, and spend.
-- No real student records or personal information.
-- Document the data-generation assumptions, random seed, observation window, and missing-data rules.
-
-Use one row per prospect for conversion denominators. Keep campaign spend at its original grain to avoid duplicating costs when joining prospect records. Define channel attribution explicitly as first touch. Give cohorts equal follow-up time before comparing enrollment rates.
-
-## Planned implementation
-
-| Component | Planned work |
+| Measure | Result |
 | --- | --- |
-| SQL | Validate data, calculate stage conversion and drop-off, summarize cohorts, and calculate cost per inquiry and enrollment. |
-| Python | Generate data, check quality, analyze the simulated experiment, and fit a logistic regression. |
-| Statistics | Report the experiment's conversion rates, absolute percentage-point difference, relative lift, confidence interval, and hypothesis-test result. |
-| Regression | Examine enrollment associations using only pre-outcome features; use a held-out evaluation set and report model limitations. |
-| Tableau | Build executive overview, funnel/channel, and experiment dashboard views with date, channel, and program filters. |
+| Prospects / inquiries / enrollments | 10,000 / 2,100 / 454 |
+| Visitor-to-enrollment conversion | 4.54% |
+| Illustrative acquisition cost | $94,760.04 |
+| Cost per enrollment | $208.72 |
+| Form A inquiry conversion | 959 / 4,979 = 19.26% |
+| Form B inquiry conversion | 1,141 / 5,021 = 22.72% |
+| B minus A | +3.46 percentage points; 17.98% relative lift |
+| 95% difference interval | +1.87 to +5.06 percentage points |
+| Two-sided p-value | 0.0000212 |
+| Allocation mismatch p-value | 0.6745 |
+| Held-out regression ROC AUC | 0.631 |
+| Held-out average precision / prevalence | 0.079 / 0.046 |
 
-## Simulated experiment design
+The form effect is intentionally encoded in the synthetic generator. These are computed simulation results, **not measured business impact**. Channel rankings follow assumed budgets and behavior. The model is a baseline with limited discrimination.
 
-- Unit of randomization: unique prospect, with persistent assignment.
-- Control: standard inquiry form.
-- Treatment: simplified inquiry form.
-- Primary outcome: inquiry submitted within a predefined window after first visit.
-- Assign the variant before generating outcomes; keep assignment independent of channel and device.
-- Specify sample size, analysis window, significance threshold, and test before inspecting results.
-- Check assignment balance and sample-ratio mismatch.
-- Analyze prospects in their assigned groups; report uncertainty even if the result is inconclusive.
-- Synthetic findings demonstrate analysis methods and do not establish real-world causal impact.
+## Explore
 
-## Planned deliverables
+- [Executed analysis notebook](analysis.ipynb)
+- [Business brief: findings, methods, and limitations](results/business_brief.md)
+- [Static HTML report](results/report.html) — download this folder and open locally; GitHub shows HTML source.
+- [SQL queries](analysis.sql)
+- [Python pipeline](run_analysis.py)
+- [Tableau exports](tableau/)
+- [Tableau dashboard instructions](TABLEAU_GUIDE.md)
+- [Data dictionary and generation assumptions](DATA_DICTIONARY.md)
+- [Exact metrics](results/metrics.json) and [validation checks](results/validation.json)
 
-- Reproducible data-generation script and data dictionary.
-- SQL analysis queries and Python notebook.
-- Tableau-ready CSV exports.
-- Tableau workbook and a Tableau Public link once published.
-- A short business brief with computed findings, limitations, and recommendations.
+## Reproduce
 
-## Completion criteria
+Python 3.11+ is required; this run used Python 3.12.14. From a clone of this repository:
 
-- [ ] Generate and validate synthetic data.
-- [ ] Complete SQL funnel and campaign-cost analysis.
-- [ ] Complete the simulated A/B test with uncertainty estimates.
-- [ ] Fit and evaluate logistic regression.
-- [ ] Build and verify the Tableau dashboard.
-- [ ] Publish reproducible analysis and document findings.
+```bash
+cd projects/student-enrollment-funnel
+python -m venv .venv
+# macOS/Linux:
+source .venv/bin/activate
+# Windows PowerShell instead: .venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python run_analysis.py
+python -m unittest -v test_analysis.py
+```
 
-## Honest portfolio presentation
+The fixed seed is `20261028`. The command regenerates raw CSVs, a local SQLite database, Tableau-ready summaries, exact metrics, charts, and the business report. No credentials, paid services, or external data downloads are needed. Dependency versions are pinned to the tested environment. The notebook reads the same source pipeline, and its stored outputs come from executing its cells. Opening it in Jupyter requires a Jupyter environment, which is optional for the command-line workflow.
 
-This page is a project proposal. No completed dashboard, measured lift, cost savings, or business results are claimed. SQL, Python, and Tableau are the planned stack, not evidence of completed work. Adobe Analytics, Google Analytics, and Databricks are not part of this proposal.
+Compressed raw data are included under `data/`: decompress `prospects.csv.gz` and `campaign_costs.csv.gz` to open as CSV, or regenerate them. The SQLite database and uncompressed raw CSVs are generated locally and not committed.
 
-When implementation is complete, replace planned descriptions with verified work and calculated results. Keep the synthetic-data and simulated-experiment disclosures visible.
+## Analytical choices
+
+- **Funnel:** first visit → inquiry → application → admission → enrollment. One record per prospect, nested outcomes, ordered dates.
+- **Cohorts:** January–June 2025 acquisition; complete 90-day follow-up through September 28. This is cohort conversion, not calendar-month enrollment reporting.
+- **Attribution:** first-touch channel. Costs are aggregated to month × channel before joining, avoiding duplicated spend. Organic/owned-channel costs include illustrative labor/content budgets.
+- **Experiment:** persistent 50/50 prospect assignment; fixed 10,000-person sample; inquiry within seven days is the only primary outcome. Two-sided pooled z test; Wilson rate bounds; Newcombe interval for the rate difference. Allocation checks and descriptive balance are included. Planning assumptions and methods are declared in code before generation; this is not an externally preregistered trial.
+- **Regression:** L2-regularized logistic regression on pre-outcome channel/device/program/variant features, 75/25 stratified holdout, no hyperparameter search. Compare ROC AUC, average precision, Brier score, and log loss with an intercept-only baseline. Coefficients are descriptive regularized associations.
+- **Validation:** six automated tests cover reproducibility, data integrity, rejection of invalid records, join inflation/zero denominators, and agreement of the z test with an independent chi-square test.
+
+## Tableau delivery boundary
+
+CSV files and a complete dashboard specification are ready. No native Tableau workbook has been authored or tested, and no Tableau Public link is claimed. The included images and HTML report were generated with Python. After building and verifying the workbook in Tableau, add its actual publication link here.
+
+## Portfolio description
+
+“Built a reproducible SQL/Python case study analyzing 10,000 synthetic enrollment prospects, evaluated a simulated randomized form experiment with confidence intervals, and prepared Tableau-ready funnel and channel-cost exports.”
+
+Use a Tableau-dashboard claim only after the workbook is actually built. This project was developed with AI assistance; the repository includes the executable implementation and transparent assumptions for review.
+
+## Primary references
+
+- [SciPy: binomial test and Wilson proportion interval](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html)
+- [Tableau: CSV/text file connections](https://help.tableau.com/current/pro/desktop/en-us/examples_text.htm)
+- [Tableau Public FAQ](https://help.tableau.com/current/pro/desktop/en-us/public_faq.htm)

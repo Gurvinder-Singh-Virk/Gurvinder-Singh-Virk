@@ -1,0 +1,181 @@
+cohort_month,channel,device,program,visitors,inquiries,applications,admissions,enrollments
+2025-01,Email,Desktop,Business,42,12,5,5,2
+2025-01,Email,Desktop,Data Science,27,9,5,2,2
+2025-01,Email,Desktop,Healthcare,17,6,2,1,0
+2025-01,Email,Mobile,Business,59,16,10,7,6
+2025-01,Email,Mobile,Data Science,57,17,12,6,5
+2025-01,Email,Mobile,Healthcare,35,12,6,6,4
+2025-01,Organic Search,Desktop,Business,61,9,3,2,2
+2025-01,Organic Search,Desktop,Data Science,44,16,12,8,5
+2025-01,Organic Search,Desktop,Healthcare,35,11,7,6,3
+2025-01,Organic Search,Mobile,Business,80,21,10,7,5
+2025-01,Organic Search,Mobile,Data Science,62,16,13,11,8
+2025-01,Organic Search,Mobile,Healthcare,60,13,9,7,4
+2025-01,Paid Search,Desktop,Business,75,23,11,6,3
+2025-01,Paid Search,Desktop,Data Science,59,14,8,5,3
+2025-01,Paid Search,Desktop,Healthcare,55,12,8,6,2
+2025-01,Paid Search,Mobile,Business,110,21,10,9,5
+2025-01,Paid Search,Mobile,Data Science,93,17,9,3,0
+2025-01,Paid Search,Mobile,Healthcare,83,11,6,5,1
+2025-01,Paid Social,Desktop,Business,78,16,9,9,3
+2025-01,Paid Social,Desktop,Data Science,65,12,5,4,3
+2025-01,Paid Social,Desktop,Healthcare,56,11,4,3,1
+2025-01,Paid Social,Mobile,Business,89,12,4,2,1
+2025-01,Paid Social,Mobile,Data Science,89,16,8,5,1
+2025-01,Paid Social,Mobile,Healthcare,67,11,6,5,2
+2025-01,Referral,Desktop,Business,34,6,3,3,1
+2025-01,Referral,Desktop,Data Science,25,7,5,4,2
+2025-01,Referral,Desktop,Healthcare,17,3,0,0,0
+2025-01,Referral,Mobile,Business,42,5,2,1,0
+2025-01,Referral,Mobile,Data Science,35,11,8,6,4
+2025-01,Referral,Mobile,Healthcare,19,4,2,1,1
+2025-02,Email,Desktop,Business,33,10,7,5,2
+2025-02,Email,Desktop,Data Science,32,14,14,10,6
+2025-02,Email,Desktop,Healthcare,18,3,3,1,1
+2025-02,Email,Mobile,Business,42,9,3,1,1
+2025-02,Email,Mobile,Data Science,39,11,7,4,3
+2025-02,Email,Mobile,Healthcare,32,5,4,3,3
+2025-02,Organic Search,Desktop,Business,58,15,8,3,2
+2025-02,Organic Search,Desktop,Data Science,41,12,5,4,4
+2025-02,Organic Search,Desktop,Healthcare,48,11,6,6,3
+2025-02,Organic Search,Mobile,Business,75,11,6,3,1
+2025-02,Organic Search,Mobile,Data Science,72,16,14,11,6
+2025-02,Organic Search,Mobile,Healthcare,53,9,5,4,2
+2025-02,Paid Search,Desktop,Business,76,15,11,8,5
+2025-02,Paid Search,Desktop,Data Science,58,11,7,5,2
+2025-02,Paid Search,Desktop,Healthcare,50,10,3,1,0
+2025-02,Paid Search,Mobile,Business,116,21,12,7,3
+2025-02,Paid Search,Mobile,Data Science,76,25,16,12,6
+2025-02,Paid Search,Mobile,Healthcare,66,14,8,6,3
+2025-02,Paid Social,Desktop,Business,73,15,7,4,0
+2025-02,Paid Social,Desktop,Data Science,51,9,4,1,0
+2025-02,Paid Social,Desktop,Healthcare,48,10,4,2,0
+2025-02,Paid Social,Mobile,Business,85,10,4,3,1
+2025-02,Paid Social,Mobile,Data Science,91,16,11,9,3
+2025-02,Paid Social,Mobile,Healthcare,56,13,10,7,7
+2025-02,Referral,Desktop,Business,12,4,4,4,0
+2025-02,Referral,Desktop,Data Science,19,3,2,1,1
+2025-02,Referral,Desktop,Healthcare,15,4,2,2,2
+2025-02,Referral,Mobile,Business,31,4,4,3,3
+2025-02,Referral,Mobile,Data Science,40,17,8,5,3
+2025-02,Referral,Mobile,Healthcare,24,4,3,3,0
+2025-03,Email,Desktop,Business,30,8,5,4,1
+2025-03,Email,Desktop,Data Science,24,4,3,2,1
+2025-03,Email,Desktop,Healthcare,24,5,4,4,3
+2025-03,Email,Mobile,Business,61,14,7,6,3
+2025-03,Email,Mobile,Data Science,61,11,7,5,3
+2025-03,Email,Mobile,Healthcare,20,7,4,4,3
+2025-03,Organic Search,Desktop,Business,76,19,11,9,8
+2025-03,Organic Search,Desktop,Data Science,56,9,5,4,2
+2025-03,Organic Search,Desktop,Healthcare,42,9,4,3,2
+2025-03,Organic Search,Mobile,Business,77,22,9,7,3
+2025-03,Organic Search,Mobile,Data Science,84,19,7,5,3
+2025-03,Organic Search,Mobile,Healthcare,57,12,6,3,0
+2025-03,Paid Search,Desktop,Business,73,16,11,5,3
+2025-03,Paid Search,Desktop,Data Science,77,20,14,11,8
+2025-03,Paid Search,Desktop,Healthcare,48,15,9,6,2
+2025-03,Paid Search,Mobile,Business,125,23,13,10,1
+2025-03,Paid Search,Mobile,Data Science,111,23,10,8,6
+2025-03,Paid Search,Mobile,Healthcare,73,12,6,4,3
+2025-03,Paid Social,Desktop,Business,85,16,10,7,5
+2025-03,Paid Social,Desktop,Data Science,70,7,6,5,2
+2025-03,Paid Social,Desktop,Healthcare,45,4,2,1,0
+2025-03,Paid Social,Mobile,Business,108,16,5,3,2
+2025-03,Paid Social,Mobile,Data Science,85,10,6,4,1
+2025-03,Paid Social,Mobile,Healthcare,61,3,1,1,0
+2025-03,Referral,Desktop,Business,36,10,5,4,3
+2025-03,Referral,Desktop,Data Science,26,7,4,2,1
+2025-03,Referral,Desktop,Healthcare,11,2,1,1,1
+2025-03,Referral,Mobile,Business,52,8,4,2,0
+2025-03,Referral,Mobile,Data Science,36,6,5,4,4
+2025-03,Referral,Mobile,Healthcare,22,3,0,0,0
+2025-04,Email,Desktop,Business,42,11,6,6,3
+2025-04,Email,Desktop,Data Science,20,6,4,1,1
+2025-04,Email,Desktop,Healthcare,19,3,2,2,1
+2025-04,Email,Mobile,Business,63,7,6,3,1
+2025-04,Email,Mobile,Data Science,46,12,9,5,4
+2025-04,Email,Mobile,Healthcare,25,9,7,5,3
+2025-04,Organic Search,Desktop,Business,50,16,9,6,2
+2025-04,Organic Search,Desktop,Data Science,52,15,10,8,2
+2025-04,Organic Search,Desktop,Healthcare,33,4,1,1,0
+2025-04,Organic Search,Mobile,Business,100,17,14,11,5
+2025-04,Organic Search,Mobile,Data Science,73,14,9,3,2
+2025-04,Organic Search,Mobile,Healthcare,46,10,5,2,1
+2025-04,Paid Search,Desktop,Business,72,14,9,8,2
+2025-04,Paid Search,Desktop,Data Science,69,19,7,5,3
+2025-04,Paid Search,Desktop,Healthcare,57,18,13,12,7
+2025-04,Paid Search,Mobile,Business,103,16,10,6,5
+2025-04,Paid Search,Mobile,Data Science,111,21,14,9,4
+2025-04,Paid Search,Mobile,Healthcare,71,10,5,4,2
+2025-04,Paid Social,Desktop,Business,78,12,5,4,0
+2025-04,Paid Social,Desktop,Data Science,62,12,5,4,4
+2025-04,Paid Social,Desktop,Healthcare,47,7,4,2,1
+2025-04,Paid Social,Mobile,Business,91,11,6,1,0
+2025-04,Paid Social,Mobile,Data Science,84,11,4,1,0
+2025-04,Paid Social,Mobile,Healthcare,72,12,8,7,2
+2025-04,Referral,Desktop,Business,37,3,0,0,0
+2025-04,Referral,Desktop,Data Science,27,4,1,1,0
+2025-04,Referral,Desktop,Healthcare,15,5,2,2,2
+2025-04,Referral,Mobile,Business,43,9,7,7,1
+2025-04,Referral,Mobile,Data Science,39,12,9,7,4
+2025-04,Referral,Mobile,Healthcare,25,1,0,0,0
+2025-05,Email,Desktop,Business,47,16,8,5,3
+2025-05,Email,Desktop,Data Science,25,10,9,8,5
+2025-05,Email,Desktop,Healthcare,30,10,6,5,3
+2025-05,Email,Mobile,Business,50,12,8,5,3
+2025-05,Email,Mobile,Data Science,41,12,9,8,4
+2025-05,Email,Mobile,Healthcare,39,7,6,6,3
+2025-05,Organic Search,Desktop,Business,60,16,10,7,6
+2025-05,Organic Search,Desktop,Data Science,56,16,6,5,2
+2025-05,Organic Search,Desktop,Healthcare,26,6,4,3,1
+2025-05,Organic Search,Mobile,Business,109,25,15,10,5
+2025-05,Organic Search,Mobile,Data Science,87,17,9,7,4
+2025-05,Organic Search,Mobile,Healthcare,70,10,3,2,0
+2025-05,Paid Search,Desktop,Business,79,18,8,5,3
+2025-05,Paid Search,Desktop,Data Science,67,11,7,2,2
+2025-05,Paid Search,Desktop,Healthcare,64,18,10,7,3
+2025-05,Paid Search,Mobile,Business,123,26,16,8,4
+2025-05,Paid Search,Mobile,Data Science,110,24,11,8,6
+2025-05,Paid Search,Mobile,Healthcare,83,16,8,6,4
+2025-05,Paid Social,Desktop,Business,69,9,4,1,1
+2025-05,Paid Social,Desktop,Data Science,54,8,5,2,1
+2025-05,Paid Social,Desktop,Healthcare,45,3,2,2,0
+2025-05,Paid Social,Mobile,Business,95,11,6,4,3
+2025-05,Paid Social,Mobile,Data Science,76,17,7,5,2
+2025-05,Paid Social,Mobile,Healthcare,54,8,3,3,0
+2025-05,Referral,Desktop,Business,29,3,1,1,1
+2025-05,Referral,Desktop,Data Science,20,4,2,2,1
+2025-05,Referral,Desktop,Healthcare,17,4,1,1,0
+2025-05,Referral,Mobile,Business,39,7,4,1,1
+2025-05,Referral,Mobile,Data Science,39,11,6,4,2
+2025-05,Referral,Mobile,Healthcare,23,6,4,2,1
+2025-06,Email,Desktop,Business,33,6,5,4,2
+2025-06,Email,Desktop,Data Science,33,11,5,4,4
+2025-06,Email,Desktop,Healthcare,25,7,5,2,1
+2025-06,Email,Mobile,Business,38,14,8,7,7
+2025-06,Email,Mobile,Data Science,37,13,10,9,4
+2025-06,Email,Mobile,Healthcare,34,10,6,5,4
+2025-06,Organic Search,Desktop,Business,77,24,13,11,2
+2025-06,Organic Search,Desktop,Data Science,50,12,10,7,5
+2025-06,Organic Search,Desktop,Healthcare,41,9,4,2,1
+2025-06,Organic Search,Mobile,Business,90,21,9,6,4
+2025-06,Organic Search,Mobile,Data Science,71,14,12,9,4
+2025-06,Organic Search,Mobile,Healthcare,68,13,10,7,4
+2025-06,Paid Search,Desktop,Business,84,17,8,5,4
+2025-06,Paid Search,Desktop,Data Science,60,21,15,10,6
+2025-06,Paid Search,Desktop,Healthcare,48,13,6,2,1
+2025-06,Paid Search,Mobile,Business,109,10,5,5,3
+2025-06,Paid Search,Mobile,Data Science,108,29,12,9,4
+2025-06,Paid Search,Mobile,Healthcare,65,12,9,7,4
+2025-06,Paid Social,Desktop,Business,68,12,5,4,2
+2025-06,Paid Social,Desktop,Data Science,64,16,6,3,3
+2025-06,Paid Social,Desktop,Healthcare,39,11,4,3,2
+2025-06,Paid Social,Mobile,Business,95,18,10,6,3
+2025-06,Paid Social,Mobile,Data Science,82,11,5,5,4
+2025-06,Paid Social,Mobile,Healthcare,60,8,3,3,2
+2025-06,Referral,Desktop,Business,22,8,6,5,2
+2025-06,Referral,Desktop,Data Science,24,7,5,4,4
+2025-06,Referral,Desktop,Healthcare,22,6,2,1,1
+2025-06,Referral,Mobile,Business,44,9,3,2,2
+2025-06,Referral,Mobile,Data Science,28,9,6,4,2
+2025-06,Referral,Mobile,Healthcare,27,6,5,5,1

@@ -1,0 +1,18 @@
+{
+  "unit": "unique synthetic prospect",
+  "allocation": "independent 50/50 Bernoulli",
+  "primary_outcome": "inquiry within 7 days of first visit",
+  "control": "A: standard form",
+  "treatment": "B: simplified form",
+  "sample_size": 10000,
+  "alpha": 0.05,
+  "srm_threshold": 0.01,
+  "test": "two-sided pooled two-proportion z test",
+  "difference_ci": "95% Newcombe interval from Wilson score bounds",
+  "analysis": "intention-to-treat, fixed sample; no peeking or subgroup significance claims",
+  "cohort_start": "2025-01-01",
+  "cohort_end": "2025-06-30",
+  "followup_days": 90,
+  "data_cutoff": "2025-09-28",
+  "planning_assumptions": "20% baseline; 3 percentage-point absolute MDE; 80% power"
+}

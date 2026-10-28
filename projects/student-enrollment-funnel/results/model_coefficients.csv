@@ -1,0 +1,9 @@
+feature,coefficient,odds_ratio
+categories__channel_Organic Search,-0.40281819,0.66843362
+categories__channel_Paid Search,-0.54174219,0.58173388
+categories__channel_Paid Social,-1.05436539,0.34841346
+categories__channel_Referral,-0.43067233,0.65007189
+categories__device_Mobile,-0.18429828,0.83168769
+categories__program_Data Science,0.42525590,1.52998190
+categories__program_Healthcare,0.02423529,1.02453135
+categories__variant_B,0.15233486,1.16455013
